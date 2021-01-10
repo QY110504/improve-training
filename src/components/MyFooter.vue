@@ -1,6 +1,6 @@
 <template>
     <div id="footer">
-        底部
+        好好学习，天天向上
     </div>
 </template>
 <script>
@@ -15,6 +15,7 @@ export default {
 </script>
 <style lang="less" scoped>
     #footer{
+        text-align: center;
         height: 30px;
         color: #fff;
         background: #474443;
