@@ -1,8 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import homeIndex from '@/pages/home/index'
-import homeMain from '@/pages/home/HomeMain'
-import video from '@/components/Video'
+import homeMain from '@/pages/HomeMain'
+import course from '@/pages/Course'
+import examination from '@/pages/Examination'
+import notFound from '@/pages/NotFound'
 
 Vue.use(Router)
 
@@ -13,21 +14,20 @@ export default new Router({
       redirect:"/home"
     },{
       path: '/home',
-      name: 'homeIndex',
-      component: homeIndex,
-      redirect:"/home/index",
-      children:[
-        {
-          path: '/home/index',
-          name: 'homeMain',
-          component: homeMain,
-        },
-        {
-          path: '/home/video',
-          name: 'video',
-          component: video,
-        }
-      ]
+      name: 'homeMain',
+      component: homeMain
+    },{
+      path: '/course',
+      name: 'course',
+      component: course
+    },{
+      path: '/examination',
+      name: 'examination',
+      component: examination
+    },{
+      path:"*",
+      name:"notFound",
+      component: notFound
     }
   ]
 })

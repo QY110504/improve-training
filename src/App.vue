@@ -1,18 +1,29 @@
 <template>
   <div id="app">
-    <router-view/>
+    <myHeader/>
+    <router-view class="routeView"/>
+    <myFooter/>
   </div>
 </template>
 
 <script>
+import myHeader from "@/components/MyHeader"
+import myFooter from "@/components/MyFooter"
 export default {
-  name: 'App'
+  name: 'App',
+  components:{
+    myHeader,
+    myFooter
+  }
 }
-</script>
+</script>Footer
 
-<style>
+<style lang="less">
 #app {
   height: 100vh;
   width: 100vw;
+  .routeView{
+    height: calc(100% - 80px);
+  }
 }
 </style>

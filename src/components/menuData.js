@@ -1,38 +1,18 @@
 let menuObj=[
     {
         index:'1',
-        title:"处理中心",
-        url:"",
+        title:"首页",
+        url:"/home",
         disabled:false
     },{
         index:'2',
-        title:"我的工作台",
-        url:"",
+        title:"课程中心",
+        url:"/appcourse",
         disabled:false,
-        children:[
-            {
-                index:"2-1",
-                title:"首页",
-                url:"/home/index",
-                disabled:false
-            },
-            {
-                index:"2-2",
-                title:"视频",
-                url:"/home/video",
-                disabled:false
-            },
-            {
-                index:"2-3",
-                title:"选项1",
-                url:"/home/video",
-                disabled:true
-            }
-        ]
     },{
         index:'3',
-        title:"消息中心",
-        url:"",
+        title:"我的考试",
+        url:"/examination",
         disabled:false
     }
 ]

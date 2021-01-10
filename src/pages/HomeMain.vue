@@ -19,6 +19,5 @@ export default {
 </script>
 <style lang="less" scoped>
     #homeMain{
-        height: calc(100% - 80px);
     }
 </style>
